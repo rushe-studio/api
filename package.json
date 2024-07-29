@@ -1,0 +1,32 @@
+{
+    "name": "api",
+    "version": "1.0.0",
+    "main": "build/index.js",
+    "type": "module",
+    "scripts": {
+        "build": "node esbuild.config.js",
+        "dev": "npm run build -- --watch & node --env-file=.env --watch build/index.js",
+        "start": "node --env-file=.env build/index.js",
+        "lint": "eslint src/",
+        "lint:fix": "eslint --fix src/"
+    },
+    "author": {
+        "name": "Arthur CHAFF",
+        "email": "chaff.arthur@gmail.com"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.44.0"
+    },
+    "devDependencies": {
+        "@types/eslint__js": "^8.42.3",
+        "@types/node": "^22.0.0",
+        "@typescript-eslint/eslint-plugin": "^7.18.0",
+        "@typescript-eslint/parser": "^7.17.0",
+        "concurrently": "^8.2.2",
+        "esbuild": "0.23.0",
+        "eslint": "^9.8.0",
+        "typescript": "^5.5.4",
+        "typescript-eslint": "^7.17.0"
+    }
+}
