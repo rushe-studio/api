@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "ES2022",
+        "moduleResolution": "Bundler",
+        "sourceMap": true,
+        "strictNullChecks": false,
+        "skipLibCheck": true,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "declaration": true,
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "moduleDetection": "force",
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": false,
+        "incremental": true,
+        "noFallthroughCasesInSwitch": false,
+        "noImplicitAny": true,
+        "outDir": "build",
+        "removeComments": true,
+        "resolveJsonModule": true,
+        "strictBindCallApply": false,
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        }
+    },
+    "include": ["./src/**/*.ts"],
+    "exclude": [
+        "node_modules",
+        "build"
+    ]
+}
