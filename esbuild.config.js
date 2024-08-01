@@ -10,8 +10,10 @@ async function run() {
         outdir: './build',
         tsconfig: './tsconfig.json',
         format: 'esm',
+        platform: 'node',
         loader: { '.ts': 'ts' },
-        allowOverwrite: true
+        allowOverwrite: true,
+        external: ['fastify']
     }
 
     if (isWatchMode) {

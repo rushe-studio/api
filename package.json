@@ -15,9 +15,6 @@
         "email": "chaff.arthur@gmail.com"
     },
     "license": "MIT",
-    "dependencies": {
-        "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.44.0"
-    },
     "devDependencies": {
         "@types/eslint__js": "^8.42.3",
         "@types/node": "^22.0.0",
@@ -28,5 +25,8 @@
         "eslint": "^9.8.0",
         "typescript": "^5.5.4",
         "typescript-eslint": "^7.17.0"
+    },
+    "dependencies": {
+        "fastify": "^4.28.1"
     }
 }
