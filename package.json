@@ -4,6 +4,7 @@
     "main": "build/index.js",
     "type": "module",
     "scripts": {
+        "check": "tsc -noEmit",
         "build": "node esbuild.config.js",
         "dev": "npm run build -- --watch & node --env-file=.env --watch build/index.js",
         "start": "node --env-file=.env build/index.js",
@@ -27,6 +28,7 @@
         "typescript-eslint": "^7.17.0"
     },
     "dependencies": {
+        "dayjs": "^1.11.12",
         "fastify": "^4.28.1"
     }
 }
